@@ -7,11 +7,11 @@ class PortfolioProject():
     def __init__(self) -> None:
         # PostgreSQL connection
         self.user = 'postgres'
-        self.password = 'Greciagreciagrecia3'
+        self.password = ''
         self.host = 'postgres'
         self.port = '5432'
         self.db = 'PortfolioProject'
-        self.path = f'/Users/mariajosefranco/Documents/coding/Data Analytics Project/owid-covid-data.csv'
+        self.path = f'/owid-covid-data.csv'
 
     def obtaining_tables(self):
         df = pd.read_csv(self.path)
